@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="ab">
+        Rutuja
+    </div>
+    <script>
+        // // var el=document.createElement("welcome");
+        // document.getElementById("ab").addEventListener("mouseover",abc);
+
+        // function abc();
+        // {
+        //     el.innerHTML="welcome"
+        //     document.getElementById("ab").appendChild(el);
+        // }
+        
+        var el=document.createElement("h1")
+        document.getElementById("ab").onmouseover=function(){
+            abc();
+
+        }
+        function abc()
+        {
+            el.innerHTML="welcome"
+            document.getElementById("ab").appendChild(el);
+        }
+    </script>
+    
+</body>
+</html>

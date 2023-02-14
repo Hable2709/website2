@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num=0;
+        var j,k;
+        for(j=2,j<=100,j++)
+        {
+            for(k=1;k<=j;k++)
+            {
+                if(j%k==0)
+                num++;
+            }
+            if(num==2)
+            document.write(j+ "<br>")
+        }
+
+    </script>
+    
+</body>
+</html>

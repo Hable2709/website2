@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .lm{
+            color:salmon;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <h1 id="ab">Hello</h1>
+    <button onclick="fun()">Click</button>
+    <script>
+        function fun()
+        {
+            var i=document.createElement("i");
+            i.innerHTML="ABCD";
+            i.classList.add("lm");
+            // i.classList.remove("lm");
+
+
+            document.getElementById("ab").appendChild(i);
+
+        }
+    </script>
+    
+</body>
+</html>

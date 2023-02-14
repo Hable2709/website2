@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="username"><br><br>
+        <input type="text" placeholder="password"><br><br>
+        <input type="submit" onclick="fun()"> 
+    </form>
+    <script>
+        function fun()
+        {
+            var ab=document.getElementsByTagName("input")[0].value
+            var da=new Date()
+            var day=30;
+            da.setTime(da.getTime()+(days*24*60*60*1000))
+            var ex="expires="+da.toUTCString();
+            document.cookie="Username="+ab+";"+ex;
+        }
+       
+    </script>
+    
+</body>
+</html>
