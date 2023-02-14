@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="jquery-3.6.1.min.js"></script>
+</head>
+<style>
+    .box{
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 100px;
+        height: 100px;
+        display: block;
+        box-shadow: 2px 2px 2px #6a686a;
+        border-radius: 12px;
+        background-color: crimson;
+        /* display: none; */
+    }
+    .box1{ margin: 0 auto;
+        margin-top: 50px;
+        width: 100px;
+        height: 100px;
+        display: block;
+        box-shadow: 2px 2px 2px #6a686a;
+        border-radius: 12px;
+        background-color: crimson;
+        /* display: none; */
+
+    }
+    .box2{
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 100px;
+        height: 100px;
+        display: block;
+        box-shadow: 2px 2px 2px #6a686a;
+        border-radius: 12px;
+        background-color: crimson;
+        /* display: none; */
+    }
+</style>
+<body>
+    <button>Click</button>
+    <div class="box"></div>
+    <div class="box1"></div>
+    <div class="box2"></div>
+
+    <Script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                if($(".box").width()<150){
+                    $(".box").annimate({
+                        // opacity:0.5,
+                        width:"150px",
+                        height:"150px",
+                        rotate:"100deg"
+                    },500)
+                }
+                else{
+                    $(".box").annimate({
+                        // opacity:1,
+                        width:"100px",
+                        height:"100px",
+                        rotate:"0deg"
+
+                    },500)
+                }
+                $(".box").delay().fadeIn();
+                $(".box1").delay(1000).fadeIn();
+                $(".box2").delay(2000).fadeIn();
+            })
+            
+        })
+        
+    </Script>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="jquery-3.6.1.min.js"></script>
+</head>
+<style>
+    .out{
+        width: 50%;
+        height: 300px;
+        overflow: scroll;
+    }
+</style>
+<body>
+    <div class="out">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non recusandae magnam hic assumenda enim repellat consequatur, commodi reprehenderit sit itaque, fuga perspiciatis, dolore delectus provident sunt officia. Optio, iusto distinctio.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non recusandae magnam hic assumenda enim repellat consequatur, commodi reprehenderit sit itaque, fuga perspiciatis, dolore delectus provident sunt officia. Optio, iusto distinctio.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non recusandae magnam hic assumenda enim repellat consequatur, commodi reprehenderit sit itaque, fuga perspiciatis, dolore delectus provident sunt officia. Optio, iusto distinctio.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non recusandae magnam hic assumenda enim repellat consequatur, commodi reprehenderit sit itaque, fuga perspiciatis, dolore delectus provident sunt officia. Optio, iusto distinctio.</p>
+    </div>
+    <spam class="show"></spam>
+    <div  class="out">
+        ABCD
+    </div>
+    <div  class="out">
+        XYZ
+    </div>
+    <script>
+        var a=0;
+        $(document).ready(function(){
+            $(".out").scroll(function(){
+                $(".show").text(a=a+1);
+            })
+            $(window).scroll(function(){
+                $(".show").text(a=a+1);
+
+            })
+        })
+    </script>
+
+    
+</body>
+</html>

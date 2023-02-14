@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="jquery-3.6.1.min.js"></script>
+    <style>
+        .out{
+            /* height:500px ;
+            width: 40%; */
+            background-color: bisque;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .in{
+            height: 350px;
+            width: 35%;
+            background-color: darkseagreen;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+            margin-top: 35px;
+
+        }
+        .abc{
+            background-color: darksalmon;
+            /* height: 200px;
+            width:50% ; */
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="out">
+        <div class="in">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempora omnis labore mollitia aperiam dignissimos unde, in eos consequatur fugit distinctio. Dolor, aut dicta? Quaerat ipsa autem cumque iure nobis?</h2>
+        </div>
+        <div class="in">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, molestiae. Maiores obcaecati inventore minima perferendis dignissimos tenetur cupiditate autem dolores incidunt blanditiis, alias ex? Et necessitatibus mollitia ullam exercitationem voluptas!</h2>
+        </div>
+        <div class="in">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur provident quis nulla, optio et doloribus ut officia ullam. Blanditiis minus quis alias eveniet sed doloribus labore, beatae iusto pariatur expedita.</h2>
+        </div>
+        <div class="in">
+            <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt in vel suscipit cumque tenetur necessitatibus fugiat rerum quam sapiente deleniti at nobis, voluptas debitis. Aliquam consectetur molestiae similique saepe laboriosam?</h2>
+        </div>
+    </div>
+    <div class="abc">
+        <button>Show paragraph</button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatibus tempore at veritatis vero, autem debitis cum! Quibusdam alias reprehenderit temporibus ex veritatis ab maiores, ea facilis corporis. Illum, modi.</p>
+
+    </div>
+    <script>
+        // $(document).ready(function(){
+        //     $(".in").hover(function(){
+        //         $(this).fadeOut(2000);
+        //     })
+        // })
+        $(document).ready(function(){
+            $(".in").hover(function(){
+                $(this).fadeOut(1500);
+            })
+        })
+        $(document).ready(function(){
+            $(".abc button").click(function(){
+                $(".abc p").fadeToggle(2000);
+            })
+        })
+
+    </script>
+    
+</body>
+</html>

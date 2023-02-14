@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="jquery-3.6.1.min.js"></script>
+    <style>
+        div {
+            background-color: bisque;
+            width: 50%;
+            color: black;
+            position: relative;
+        }
+
+        .p {
+            position: absolute;
+            display: none;
+            top: 200px;
+            width: 500px;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div>
+        <h1>Welcome</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim nesciunt quaerat ea officia perspiciatis
+            consequatur aut? At voluptates sit quaerat perferendis error voluptas vero ea iure quos consectetur, soluta
+            iste.</p>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("h1").hover(function () {
+                // $("h1").hide(5000);
+                $("h1").toggle(2000);
+
+            })
+
+        })
+    </script>
+
+</body>
+
+</html>
